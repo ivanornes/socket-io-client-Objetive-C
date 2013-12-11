@@ -30,7 +30,22 @@
 		428D688017B42E9E00DB009F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D687F17B42E9E00DB009F /* libicucore.dylib */; };
 		428D688217B42EB000DB009F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D688117B42EB000DB009F /* Security.framework */; };
 		42F47D3017B5A17400A5134B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F47D2F17B5A0A100A5134B /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F404B2F18591C5C00C534F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F404B2E18591C5C00C534F9 /* XCTest.framework */; };
+		9F404B3018591C5C00C534F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D683517B42B4A00DB009F /* Foundation.framework */; };
+		9F404B3118591C5C00C534F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D683317B42B4A00DB009F /* UIKit.framework */; };
+		9F404B3718591C5C00C534F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F404B3518591C5C00C534F9 /* InfoPlist.strings */; };
+		9F404B3918591C5C00C534F9 /* socketio_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F404B3818591C5C00C534F9 /* socketio_testTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F404B3B18591C5C00C534F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 428D682817B42B4A00DB009F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 428D682F17B42B4A00DB009F;
+			remoteInfo = socketio_test;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		428D683017B42B4A00DB009F /* socketio_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socketio_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +86,12 @@
 		428D688117B42EB000DB009F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		42F47D2E17B5A0A100A5134B /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		42F47D2F17B5A0A100A5134B /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		9F404B2D18591C5C00C534F9 /* socketio_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socketio_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F404B2E18591C5C00C534F9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9F404B3418591C5C00C534F9 /* socketio_testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "socketio_testTests-Info.plist"; sourceTree = "<group>"; };
+		9F404B3618591C5C00C534F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F404B3818591C5C00C534F9 /* socketio_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = socketio_testTests.m; sourceTree = "<group>"; };
+		9F404B3A18591C5C00C534F9 /* socketio_testTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "socketio_testTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +108,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F404B2A18591C5C00C534F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F404B2F18591C5C00C534F9 /* XCTest.framework in Frameworks */,
+				9F404B3118591C5C00C534F9 /* UIKit.framework in Frameworks */,
+				9F404B3018591C5C00C534F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				428D683917B42B4A00DB009F /* socketio_test */,
+				9F404B3218591C5C00C534F9 /* socketio_testTests */,
 				428D683217B42B4A00DB009F /* Frameworks */,
 				428D683117B42B4A00DB009F /* Products */,
 			);
@@ -103,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				428D683017B42B4A00DB009F /* socketio_test.app */,
+				9F404B2D18591C5C00C534F9 /* socketio_testTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +149,7 @@
 				428D683317B42B4A00DB009F /* UIKit.framework */,
 				428D683517B42B4A00DB009F /* Foundation.framework */,
 				428D683717B42B4A00DB009F /* CoreGraphics.framework */,
+				9F404B2E18591C5C00C534F9 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,6 +208,25 @@
 			name = SocketIO;
 			sourceTree = "<group>";
 		};
+		9F404B3218591C5C00C534F9 /* socketio_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F404B3818591C5C00C534F9 /* socketio_testTests.m */,
+				9F404B3318591C5C00C534F9 /* Supporting Files */,
+			);
+			path = socketio_testTests;
+			sourceTree = "<group>";
+		};
+		9F404B3318591C5C00C534F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F404B3418591C5C00C534F9 /* socketio_testTests-Info.plist */,
+				9F404B3518591C5C00C534F9 /* InfoPlist.strings */,
+				9F404B3A18591C5C00C534F9 /* socketio_testTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +247,24 @@
 			productReference = 428D683017B42B4A00DB009F /* socketio_test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9F404B2C18591C5C00C534F9 /* socketio_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F404B3F18591C5C00C534F9 /* Build configuration list for PBXNativeTarget "socketio_testTests" */;
+			buildPhases = (
+				9F404B2918591C5C00C534F9 /* Sources */,
+				9F404B2A18591C5C00C534F9 /* Frameworks */,
+				9F404B2B18591C5C00C534F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F404B3C18591C5C00C534F9 /* PBXTargetDependency */,
+			);
+			name = socketio_testTests;
+			productName = socketio_testTests;
+			productReference = 9F404B2D18591C5C00C534F9 /* socketio_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +274,11 @@
 				CLASSPREFIX = MW;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Tocarta;
+				TargetAttributes = {
+					9F404B2C18591C5C00C534F9 = {
+						TestTargetID = 428D682F17B42B4A00DB009F;
+					};
+				};
 			};
 			buildConfigurationList = 428D682B17B42B4A00DB009F /* Build configuration list for PBXProject "socketio_test" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -217,6 +293,7 @@
 			projectRoot = "";
 			targets = (
 				428D682F17B42B4A00DB009F /* socketio_test */,
+				9F404B2C18591C5C00C534F9 /* socketio_testTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +308,14 @@
 				428D684817B42B4A00DB009F /* Default@2x.png in Resources */,
 				428D684A17B42B4A00DB009F /* Default-568h@2x.png in Resources */,
 				428D684D17B42B4B00DB009F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F404B2B18591C5C00C534F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F404B3718591C5C00C534F9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +341,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F404B2918591C5C00C534F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F404B3918591C5C00C534F9 /* socketio_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F404B3C18591C5C00C534F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 428D682F17B42B4A00DB009F /* socketio_test */;
+			targetProxy = 9F404B3B18591C5C00C534F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		428D683C17B42B4A00DB009F /* InfoPlist.strings */ = {
@@ -273,6 +374,14 @@
 				428D684C17B42B4B00DB009F /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		9F404B3518591C5C00C534F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F404B3618591C5C00C534F9 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,6 +465,67 @@
 			};
 			name = Release;
 		};
+		9F404B3D18591C5C00C534F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/socketio_test.app/socketio_test";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "socketio_testTests/socketio_testTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "socketio_testTests/socketio_testTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9F404B3E18591C5C00C534F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/socketio_test.app/socketio_test";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "socketio_testTests/socketio_testTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "socketio_testTests/socketio_testTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +546,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9F404B3F18591C5C00C534F9 /* Build configuration list for PBXNativeTarget "socketio_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F404B3D18591C5C00C534F9 /* Debug */,
+				9F404B3E18591C5C00C534F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
